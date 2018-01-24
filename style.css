@@ -1,0 +1,33 @@
+.h1 {
+    font-family: Georgia;
+}
+
+.color  {
+
+    color: blue;
+}
+
+.capitalize {
+
+    text-transform: capitalize;
+}
+
+.font-family  {
+
+    font-family: Arial;
+
+}
+
+
+p.font-family  {
+
+    color: gray;
+}
+
+h2.font-family {
+
+    font-family: cursive;
+    text-transform: capitalize;
+
+
+}

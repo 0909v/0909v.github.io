@@ -22,17 +22,4 @@ layout: default
 
 <h1><a href="Wer%20bin%20ich%3F%201.html">Besuchen sie doch mal mein Wer Bin ich</a></h1>
 
-<div id="example"></div>
-
-<script type="text/javascript">
-
-    txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
-    txt+= "<p>Browser Name: " + navigator.appName + "</p>";
-    txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
-    txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
-    txt+= "<p>Platform: " + navigator.platform + "</p>";
-    txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
-
-    document.getElementById("example").innerHTML=txt;
-
-</script>
+document.write('<p class="accent">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '!</p>');

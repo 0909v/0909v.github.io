@@ -1,60 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Vincent Mohr</title>
-</head>
-<body>
-<h1 class="color capitalize h1">Hallo, ich bin's Vincent Mohr</h1>
+---
+layout: default
+---
 
-<div>
-    <h2><br />Ich bin 16 Jahre alt</h2>
+<div class="posts">
+    {% for post in site.posts %}
+    <article class="post">
+
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        <div class="entry">
+            {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endfor %}
 </div>
-
-<h2 class="font-family"> Ich wohne in <a href="https://www.google.de/maps/place/Bonn/@50.7034931,6.9772171,11z/data=!3m1!4b1!4m5!3m4!1s0x47bee19f7ccbda49:0x86dbf8c6685c9617!8m2!3d50.73743!4d7.0982068">Bonn</a></h2>
-    <h2> Meine Hobbys:</h2>
-<h3>
-<ul>
-    <li>Karate</li>
-    <li>Joggen</li>
-    <li>Hund</li>
-</ul>
-</h3>
-<p class="font-family"><br />Wenn sie Bilder von mir sehen wollen dann gehen sie auf meine <a href="https://www.instagram.com/_.insta.vince._/?hl=de">Instagram Seite.</a> </p>
-<h1>Besuchen sie doch mal die Seite <a href="https://www.chefkoch.de/">Chefkoch.de.</a><br />Dort mache ich grade mein Praktikum!<h1><h2>Und übrigens, Chefkoch hatte im Dezember über 24 Millionen Benutzer. Der Höhepunkt des Jahres!</h2>
-    <h2>Dort finden sie viele tolle rezepte!<h2>
-        <h1><u>Mein Praktikum</u></h1>
-        <h2><u>Rückblick:</u></h2>
-        <p>In den ersten zwei Tagen lernte ich ,über die Seite Codecademy, wie ich HTML,CSS und GitHub bedienen kann.</p>
-        <h2><u>Ausblick:</u></h2><p>Ich werde mit GitHub pages meinen Blog gestalten und weitere Änderungen an meiner Seite nehemn.</p>
-        <h3>Sehr tolli</h3>
-        <h1 class="color capitalize h1">Einen schönen Tag noch!</h1>
-        <p>Besuchen sie doch mal mein Programmiertes<a href="Wer%20bin%20ich%3F%201.html">'Wer Bin Ich'</a> aus</p>
-
-        <div id="disqus_thread"></div>
-        <script>
-
-            /**
-             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-0909v-github-io.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-        <script id="dsq-count-scr" src="//https-0909v-github-io.disqus.com/count.js" async></script>
-
-</body>
-</html>

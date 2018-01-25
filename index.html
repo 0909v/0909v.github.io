@@ -24,7 +24,14 @@ layout: default
 
 <script>
 
-    if(navigator.appCodeName== 'Chrome'){
-        <p>Dein-Browser-ist-Mozilla</p>
+    var elem = document.getElementById('button');
+    elem.addEventListener('click', browserCheck);
+
+    function browserCheck() {
+        if (navigator.appCodeName == "Chrome") {
+            text = 'So ein drachenstarker Browser!';
+        }
+        var ausgabe = document.getElementById('ausgabe');
+        ausgabe.innerHTML = text;
     }
 </script>

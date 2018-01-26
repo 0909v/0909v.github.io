@@ -7,6 +7,10 @@
     color: blue;
 }
 
+.color2 {
+
+    color: red;
+}
 .capitalize {
 
     text-transform: capitalize;
@@ -21,7 +25,7 @@
 
 p.font-family  {
 
-    color: gray;
+    color: darkgray;
 }
 
 h2.font-family {

@@ -30,3 +30,23 @@ layout: default
     document.codename(Dein-browser-ist-firefox);
     }
 </script>
+
+<div>Du benutzt<span id="ausgabe"></span></div>
+
+<script>
+
+    var text= navigator.userAgent;
+
+    var ausgabe = document.getElementById('ausgabe');
+    ausgabe.innerHTML = text;
+
+
+
+</script>
+
+<p id="pos">Daten werden ermittelt...</p>
+<script>
+    navigator.geolocation.getCurrentPosition(function(position){
+        document.getElementById('pos').innerHTML = 'Lat: '+position.coords.latitude+' - Long: '+position.coords.longitude+ ' <a href="https://www.google.de/maps/place//@'+position.coords.latitude+','+position.coords.longitude+ ',16z/">Auf Google Maps anzeigen</a>';
+    });
+</script>

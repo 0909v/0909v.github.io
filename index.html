@@ -47,6 +47,6 @@ layout: default
 <p id="pos">Daten werden ermittelt...</p>
 <script>
     navigator.geolocation.getCurrentPosition(function(position){
-        document.getElementById('pos').innerHTML = 'Lat: '+position.coords.latitude+' - Long: '+position.coords.longitude+ ' <a href="https://www.google.de/maps/place//@'+position.coords.latitude+','+position.coords.longitude+ ',16z/">Auf Google Maps anzeigen</a>';
+        document.getElementById('pos').innerHTML = 'Lat: '+position.coords.latitude+' - Long: '+position.coords.longitude+ ' <a href="https://www.google.de/maps/place//@'+position.coords.latitude+','+position.coords.longitude+ ',16z/">Lassen sie sich ihre nStandort aus Google Maps anzeigen</a>';
     });
 </script>
